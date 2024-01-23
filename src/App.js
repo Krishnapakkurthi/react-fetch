@@ -87,19 +87,14 @@ const getUsers= ()=>{
           )
         }
          <ul>
-        {/* Print array using Map */}
-        {
-          users.map((product) =>
-          <div>
-              <li key={product.image}>{product.image}</li>
-            <img src={product.image[0]} className="logo" alt="Vite logo" />
-          </div>
-        
-          //console.log(title)
-          
-          )
-        }
-        </ul>
+  {/* Print array using Map */}
+  {users.map((user) => (
+    <div key={user.image}>
+      <li>{user.image}</li>
+      <img src={user.image} className="logo" alt="Vite logo" />
+    </div>
+  ))}
+</ul>
         {/* <img src={"https://cdn.dummyjson.com/product-images/1/1.jpg"} className="logo" alt="Vite logo" /> */}
       </ul>
     </div>
